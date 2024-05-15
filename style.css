@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.nunito-regular {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.nunito-title {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+div {
+    border: 1px dashed gray;
+}
+
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@layer ui-kit {
+    :root {
+        --main-color-green: #A9E08C;
+        --main-color-red: #FB6574;
+        font-size: 16px;
+    }
+}
+
+@layer layout {
+    .container {
+        max-width: 1140px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
