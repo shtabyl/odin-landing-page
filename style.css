@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-.nunito-title {
+.nunito-logo {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
@@ -17,6 +17,11 @@
 div {
     border: 1px dashed gray;
 }
+
+section {
+    border: 1px dashed blue;
+}
+
 
 @layer reset {
     * {
@@ -28,18 +33,105 @@ div {
     }
 }
 
+
 @layer ui-kit {
     :root {
         --main-color-green: #A9E08C;
         --main-color-red: #FB6574;
+        --bright-green: #2EB872;
         font-size: 16px;
     }
 }
+
 
 @layer layout {
     .container {
         max-width: 1140px;
         width: 80%;
         margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .header__nav-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .section-1__container {
+        display: flex;
+    }
+
+    .section-1__left-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section-2__title {
+        /* text-align: center; */
+    }
+
+    .section-2__content-box {
+        display: flex;
+    }
+
+    .section-4__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-4__right-wrapper {
+        justify-content: center;
+        
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex: 1 1 50px; */
+    }
+}
+
+
+@layer decoration {
+    .nav-menu {
+        display: flex;
+        list-style-type: none;
+        gap: 4rem;
+
+        a {
+            text-decoration: none;
+            color: var(--bright-green);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+
+    .button {
+        padding: 0.5rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--main-color-green);
+    }
+
+    .title {
+        /* color: var(--main-color-red) */
+        color: var(--bright-green)
+    }
+
+    .hero-message {
+        color: var(--bright-green);
+        font-size: 2rem;
+    }
+
+    .text {
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        margin-bottom: 0.75rem;
     }
 }
