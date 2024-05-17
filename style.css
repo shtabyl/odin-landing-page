@@ -205,7 +205,7 @@ section {
             border-radius: var(--b-radius);
         }
         figcaption {
-            font-size: 0.5rem;
+            font-size: 0.55rem;
             text-align: right;
             color: rgb(170, 170, 170);
             a {
@@ -217,10 +217,19 @@ section {
     .section-4__text {
         width: 65%;
     }
-    .section-3__image-box img {
+    .section-3__image-box {
+        img {
         border-radius: var(--b-radius);
+        }
+        figcaption {
+            font-size: 0.55rem;
+            text-align: right;
+            color: rgb(170, 170, 170);
+            a {
+                color: rgb(170, 170, 170);
+            }
+        }
     }
-
     .section-4__content-box {
         /* background-color: var(--main-color-green); */
         border-radius: var(--b-radius);
@@ -277,7 +286,7 @@ section {
 
     .card-item {
         figcaption {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
         text-align: right;
         color: rgb(170, 170, 170);
         padding-bottom: 0.5rem;
